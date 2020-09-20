@@ -106,15 +106,17 @@ footer {
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
+    margin-bottom: 100px
 }
 
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
     color: #e05626;
-    padding: 15px;
+    padding: 10px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
     transition: padding .2s ease-in;
+    font-size: 30px;
 }
 
 .navbar-header > .navbar-brand:hover,
@@ -155,8 +157,6 @@ footer {
 }
 
 
-
-
  header {
     position: relative;
     min-height: auto;
@@ -164,7 +164,7 @@ footer {
     color: #fff;
     background-color: #c9c9c9;
     background-image: url('../assets/pic.jpg');
-   
+
     height:60%;
     background-position: center;
 }
@@ -172,9 +172,9 @@ footer {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
     text-align: center;
     z-index: 2;
+    height: 50%;
 }
 
 header .header-content .inner  {
@@ -200,25 +200,20 @@ animation-fill-mode: both;
 animation-name: fadeInUp;
 display: flex;
 flex-direction: column;
-width: 25%;
+width: 15%;
+margin-left: 100px;
+margin-right: 100px;
 
-
-
-margin-right: 50px;
-margin-left: 50px;
-
+}
+.is-recovered, .is-deceased{
+  margin-top: 80px;
 }
 .is-confirmed,.is-recovered{
     float: left;
+    clear: right;
 }
 .is-active,.is-deceased{
     float:right;
-}
-header .header-content .inner p {
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.7);
 }
 
 #one .container .row div>span{
@@ -232,7 +227,11 @@ header .header-content .inner p {
 
 
 footer {
-    background-color:#2d2d2d;
+    background-color:BLACK;
+}
+
+footer h4{
+  color:white;
 }
 
 @media(min-width:768px) {
@@ -247,7 +246,6 @@ footer {
     header .header-content {
         position: absolute;
         top: 50%;
-        padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -257,17 +255,6 @@ footer {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
-    }
-
-    header .header-content .inner h1 {
-        font-size: 53px;
-    }
-
-    header .header-content .inner p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-        font-size: 18px;
     }
 
     section {
